@@ -1,0 +1,73 @@
+h1 {
+  margin-top: 0px;
+}
+.player-container {
+  padding: 24px;
+  background: #F1F1F1;
+}
+
+.player {
+  width: 35%;
+  float: left;
+  padding-right: 16px;
+  border-right: 1px dotted #000;
+}
+
+.songs-list {
+  width: 30%;
+  float: left;
+  padding: 0px 16px;
+  border-right: 1px dotted #000;
+  min-height: 360px;
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
+
+.new-song {
+  float: left;
+  width: calc(29% - 16px);
+  padding-left: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  @media screen and (max-width: 640px){
+    width: calc(25% - 16px);
+  }
+}
+
+.single-song {
+  padding: 8px 0px;
+  border-top: 1px dotted #000;
+}
+
+.add-song-button {
+  width: 85px;
+  position: relative;
+  text-transform: uppercase;
+  color: #fff;
+  background: #00b69a;
+  padding: 8px 16px;
+  line-height: 1.3em;
+  text-align: center;
+  border:none;
+  font-weight: 700;
+  font-size: 13px;
+  &:hover{
+    background: #1a8772;
+    cursor: pointer;
+  }
+}
+
+.current-song{
+  background-color: aquamarine;
+}
+
+.new-song-link {
+  width: 100%;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
