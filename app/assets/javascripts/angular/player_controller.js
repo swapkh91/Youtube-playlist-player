@@ -56,7 +56,12 @@ myApp.controller('PlayerController', ['$scope', '$http', '$sce', function ($scop
     $scope.addVideo = function() {
         if($scope.videoLink == null)
             return;
-        var videoId = $scope.videoLink.substr($scope.videoLink.indexOf('=')+1);
+        var regExp = /^.*(youtu.be\/|v\/|e\/|u\/\w+\/|embed\/|v=)([^#\&\?]*).*/;
+        var match = $scope.videoLink.match(regExp);
+        if (!match){
+            return;
+        }
+        var videoId = match[2];
         var duplicate_link = false;
         angular.forEach($scope.songs_list, function (song) {
             if(song.video_id == videoId){
