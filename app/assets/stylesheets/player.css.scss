@@ -43,7 +43,7 @@ h1 {
 }
 
 .add-song-button {
-  width: 85px;
+  box-sizing: border-box;
   position: relative;
   text-transform: uppercase;
   color: #fff;
